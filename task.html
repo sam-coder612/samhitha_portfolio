@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Comprehensive layouts</title>
+     <link rel="stylesheet" href="task.css">
+ </head> 
+ <body>
+    <div class="header">
+        <h1>Chapter : Comprehensive CSS Layouts</h1>
+        <p> For First Year Engineering Students</p>
+    </div>
+    <div>
+       <div class="section">
+        <h2>Block Layout</h2>
+        <p><strong>Block elements</strong> take the full width available and stack vertically they always start on a new line.</p>
+        </div>
+        <div class="example-box">
+            <h3>display:block</h3>
+            <p>These elements have <code>display:block</code> applied:</p>
+             <div class="block-container">
+                <div class="block-element">Block Element 1</div>
+                 <div class="block-element">Block Element 2</div>
+                  <div class="block-element">Block Element </div>
+            </div> 
+            <div class="code-block">
+/* CSS for block elements */
+.block-item {
+  display: block;          /* Makes element a block */
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;         /* Vertical margin works */
+  width: 100%;            /* Takes full width by default */
+}
+      </div>
+       <div class="note">
+        <strong>Default Block Elements :</strong> &lt;div&gt;, &lt;h1&gt;-&lt;h6&gt;, &lt;p&gt;, &lt;section&gt;, &lt;article&gt;
+       </div>
+
+        </div>
+    </div>
+    <div class="section">
+        <h2>Inline-Block Layout</h2>
+        <p><strong>Inline-block elements </strong> flow horizontally like inline elements but can have width,height,margin,and padding like block elements</p>
+        <div class="example-box">
+            <h3>display:inline-block</h3>
+            <p> These elements have <code>display:inline-block</code> applied:</p>
+            <div class="dashed">
+                <div class="inline">Inline-Block 1</div>
+                <div class="inline">Inline-Block 2</div>
+                <div class="inline">Inline-Block 3</div>
+                <div class="inline">Inline-Block 4</div>
+            </div>
+            <p><strong>Inline Elements</strong></p>
+            <p>This is  <span class="orange">Inline 1</span>  text with <span class="orange">Inline 2</span> elements that flow <span class="orange">Inline 3</span> horizontally.</p>
+            <div class="note">
+                <p>Inline elements ignore width/height and only have left/right margins</p>
+            </div>
+            <div class="code-block">
+                /* CSS for inline-block elements */ .inline-block-item {diapaly : inline-block ; /* Allows horizontal flow with block properties */ background-color: #34c759; color:white; padding:15px; margin: 5px; }
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Flexbox(Flexible Box Layout )</h2>
+        <p><strong>Flexbox</strong> is a one-dimensional layout method for arranging items in rows or columns .</p>
+        <div class="example-box">
+           <h3>diaplay: flex</h3>
+           <p>This container has <code> display: flex </code> applied:</p>
+           <div class="flex-container">
+            <div class="flex">Flex Item 1</div>
+             <div class="flex">Flex Item 2</div>
+             <div class="flex">Flex Item 3</div>
+            
+           </div>
+           <div class="code-block">
+            /* CSS for flex container */ .flex-container {display : flex; /* Activate Flexbox 
+            */ background-color: #e8f4fd; padding: 15px; gap:10px; /* Space between items */} .flex-item { flex: 1; /* Items grow equally to fill space */ padding: 20px; text-align :center;}
+           </div>
+        </div>
+    </div>
+
+
+<div class="section">
+        <h2>CSS Grid Layout</h2>
+        <p><strong>CSS Grid</strong> is a two-dimensional layout system for creating complex grid-based designs.</p>
+        <div class="example-box">
+            <h3>display: grid</h3>
+            <p>This container has <code>display: grid</code> applied:</p>
+            <div class="grid-container grid-cols ">
+                <div class="grid">Grid item 1</div>
+                 <div class="grid">Grid item 2</div>
+                  <div class="grid">Grid item 3</div>
+                   <div class="grid">Grid item 4</div>
+                    <div class="grid">Grid item 5</div>
+                     <div class="grid">Grid item 6</div>
+            </div>
+            <div class="code-block">
+                /* CSS for grid container */ .grid-container { display: grid; /* Activates CSS Grid */ grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */ gap: 10px; /* Space between grid items */ padding: 15px; } .grid-item { padding: 25px; text-align: center; } /* Current Grid CSS */ #gridDemo { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; } /* Different grid-template-columns examples */ .grid-cols-3 { grid-template-columns: repeat(3, 1fr); /* 3 equal columns */ } .grid-cols-fixed { grid-template-columns: 100px 200px 150px; /* Fixed width columns */ } .grid-cols-mixed { grid-template-columns: 1fr 2fr 1fr; /* Mixed ratio columns */ } .grid-cols-responsive { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */ }
+                                                                                                                                                                                           
+            </div>
+
+        </div>
+    </div>
+ </body>
