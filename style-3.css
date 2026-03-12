@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background: white;
+    padding: 15px 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6c63ff;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    min-height: 90vh;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 span {
+    color: #111;
+    font-weight: 700;
+}
+
+.hero-text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.highlight {
+    color: #6c63ff;
+}
+
+.hero-text p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.hero-text button {
+    padding: 12px 25px;
+    background: #6c63ff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    background: #574fd6;
+}
+
+
+.hero-image {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hero-image img {
+    width: 300px;
+    display: block;
+}
+
+
+@media(max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+}
+.container
+{
+    height: 160vh;
+    width: 90vh;
+    background-color:white;
+    margin-left: 420px;
+    margin-right: 50px;
+    margin-top: 100px;
+    border:#666 5px solid;
+}
+.container h1{
+    margin-left: 50px;
+    margin-top: 30px;
+    font-family: 'Times New Roman';
+    letter-spacing: 2px;
+}
+.box1
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 30px;
+    background-color: #666;
+}
+.container2{
+height: 80vh;
+    width: 90vh;
+    background-color:white;
+    margin-left: 420px;
+    margin-right: 50px;
+    margin-top: 100px;
+    border:#666 5px solid;
+}
+.box2
+{
+    padding: 40px;
+    background-color: white;
+    border-bottom: 2px solid  #666;
+    width:70vh;
+    margin-left: 30px;
+}
+.box2 h2:hover {
+    
+}
+.container2 h1{
+    margin-left: 50px;
+    margin-top: 30px;
+    font-family: 'Times New Roman';
+    letter-spacing: 2px;
+}
+.formbox{
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.label1{
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    gap:30px;
+    margin-bottom: 25px;
+}
+.form-group{
+    flex:1;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+.contact{
+    margin-left: 30px;
+    margin-top: 40px;
+}
