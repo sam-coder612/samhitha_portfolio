@@ -116,7 +116,7 @@ nav ul li a:hover {
 }
 .container
 {
-    height: 100vh;
+    height: 150vh;
     width: 90vh;
     background-color:white;
     margin-left: 420px;
@@ -187,4 +187,5 @@ height: 70vh;
 .contact{
     margin-left: 30px;
     margin-top: 40px;
+
 }
